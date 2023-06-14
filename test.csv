@@ -1,0 +1,9 @@
+name,SMILES
+Molecule A,O=C5c1ccccc1N(c3c5(c(O)cc2OC(Cc23)C4(OC4)(C)))C
+Molecule B,O=C=Nc1ccc(Cl)cc1
+Molecule C,O=C(Nc1ccc(c(c1)C(F)(F)F)[N+](=O)[O-])C(C)C
+Molecule D,Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1
+Molecule E,O=C1C(=CO)CC4(C)(C(C1)CCC3C4(CCC2(C)(C3(CCC2(O)(C)))))
+Molecule F,O=C(Nc2ccc3c1ccccc1Cc3(c2))C(F)(F)F
+Molecule G,C=CS(=O)(=O)COCS(=O)(=O)C=C
+Molecule H,COc1ccc(C)cc1Oc2ccc(C#N)c(c2)C(F)(F)F
