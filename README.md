@@ -7,8 +7,8 @@
 
 ## Requirements
 
-You must have the conda package manager installed
-Install the virtual environment 
+You must have the conda package manager installed.
+Install the virtual environment.
 ```
 $ conda env create -f enviroment.yml
 ```
