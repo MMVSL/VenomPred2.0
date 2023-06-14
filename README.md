@@ -23,5 +23,5 @@ You need to provide a csv file with a column named SMILES containing the SMILES 
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
