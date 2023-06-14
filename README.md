@@ -21,5 +21,7 @@ $ python VenomPred2_predictions.py -in test.csv -o res.csv
 ```
 You need to provide a csv file with a column named SMILES containing the SMILES structure of the compounds you want to predict
 
+## License
 
+This project is licensed under the MIT License - see the LICENSE file for details
 
