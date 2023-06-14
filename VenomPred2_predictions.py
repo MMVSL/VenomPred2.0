@@ -78,7 +78,11 @@ def tanimoto_kernel(X, Y):
 #Calculate the endpoint single models predictions for a smile         
 def get_predictions(smiles,endpoint):
     mol = Chem.MolFromSmiles(smiles)
+<<<<<<< HEAD
     models_files = [x for x in os.scandir(f"Endpoints/{endpoint}/Models/") if "dump" in x.name]
+=======
+    models_files = [x for x in os.scandir(f"Models/{endpoint}/Models/") if "dump" in x.name]
+>>>>>>> 3684659acabe87469e1ba3942dcd5f23b2c14f0f
     models = {x.name.replace(".dump",""):joblib.load(x) for x in models_files}
     preds,proba = [], []
     for m in models:
@@ -135,4 +139,8 @@ if __name__ == "__main__":
     else:
         selected_endpoints = [args.endpoint]
         
+<<<<<<< HEAD
     make_report(df,selected_endpoints)
+=======
+    make_report(df,selected_endpoints)
+>>>>>>> 3684659acabe87469e1ba3942dcd5f23b2c14f0f
