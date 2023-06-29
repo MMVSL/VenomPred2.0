@@ -89,7 +89,8 @@ def get_predictions(smiles,endpoint):
         fp = fp_as_array(mol, desc_sel) #Calculate FP for each SMILES
         preds.append(model_ML.predict(np.stack(fp).reshape(1,-1))[0])
         prob = model_ML.predict_proba(np.stack(fp).reshape(1,-1))[0][1] #Probability of Toxic prediction
-        proba.append(round(prob,2))
+        #proba.append(round(prob,2))
+        proba.append(prob)
     return preds,proba
 
 #Create the report
@@ -107,7 +108,8 @@ def make_report(data,selected_endpoints):
         #Loop to predict the endpoints
         for endpoint in selected_endpoints:
             preds, perc_models = get_predictions(smiles,endpoint.replace(" ", "_"))
-            row_csv.append(int(round(np.average(perc_models),2)*100))
+            #row_csv.append(int(round(np.average(perc_models),2)*100))
+            row_csv.append(np.average(perc_models)*100)
         data_csv.append(row_csv)
     df = pd.DataFrame.from_records(data_csv, columns=["ID","SMILES"] + [f"Score_{endpoint}" for endpoint in selected_endpoints])
     df.to_csv(output_name,index=False)
@@ -118,9 +120,9 @@ def make_report(data,selected_endpoints):
     print(f"[INFO] Predictions results saved as {output_name}")
 
 if __name__ == "__main__":
-    from warnings import simplefilter
+    #from warnings import simplefilter
     # ignore all future warnings
-    simplefilter(action='ignore', category=FutureWarning)
+    #simplefilter(action='ignore', category=FutureWarning)
     try:
         df = pd.read_csv(args.input_file)
     except:
