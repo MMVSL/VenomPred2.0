@@ -23,5 +23,5 @@ You need to provide a csv file with a column named SMILES containing the SMILES 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
+For this project the default copyright laws apply. All rights of the source code cannot be reproduced, distributed, or used to create derivative works.
+The users can use the code to obtain predictions for including them in their work. 
