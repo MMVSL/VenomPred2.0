@@ -7,23 +7,6 @@
 
 **VenomPred 2.0** platform allows you, through an innovative machine learning consensus strategy, to evaluate  the **toxicological profile** of one or multiple small molecules 
 
-## Requirements
-
-You must have the conda package manager installed.
-Install the virtual environment.
-```
-$ conda env create -f enviroment.yml
-```
-
-## Usage
-
-Clone the repository and run the script.
-```
-$ python VenomPred2_predictions.py -in test.csv -o res.csv 
-```
-You need to provide a csv file with a column named SMILES containing the SMILES structure of the compounds you want to predict
-
-## License
-
-For this project the default copyright laws apply. All rights of the source code cannot be reproduced, distributed, or used to create derivative works.
-The users can use the code to obtain predictions for including them in their work. 
+## **Venompred 2.0** will be available within the MolBook Pro software. 
+#### Request the demo of software on the following page:
+[MolBook Pro](https://www.mmvsl.it/wp/molbook-pro/)
