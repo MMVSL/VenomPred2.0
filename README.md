@@ -9,4 +9,4 @@
 
 ## **Venompred 2.0** will be available within the MolBook Pro software. 
 #### Request the demo of software on the following page:
-[MolBook Pro]([https://www.mmvsl.it/wp/molbook-pro])
+https://molbookpro.farm.unipi.it/
